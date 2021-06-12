@@ -37,6 +37,9 @@ class OAuthServer{
             URLQueryItem(name: "state", value: "login"),
             URLQueryItem(name: "scope", value: "openid profile email offline_access"),
             URLQueryItem(name: "redirect_uri", value: "oauthDemo://home"),
+            
+
+            
         ]
         authenticationSession = ASWebAuthenticationSession(url: urlComp.url!, callbackURLScheme: "oauthDemo", completionHandler: { (url, error) in
                     
@@ -125,7 +128,8 @@ class OAuthServer{
             
         
             self.token = token
-           
+    
+            print("Access token: \(self.token?.accessToken ?? "")")
 
             saveToPersistentStore(date: increaseTime(by: self.token?.tokenExpireTime ?? 0), accessToken: self.token?.accessToken ?? "" , refreshToken: self.token?.refreshToken ?? "")
             
@@ -230,7 +234,9 @@ class OAuthServer{
     func createTokenFromPersistantStore(){
         print("Access Token: \(UserDefaults.standard.string(forKey: PersistentConstant.accessToken)!)")
         self.token = Tokens(accessToken: UserDefaults.standard.string(forKey: PersistentConstant.accessToken)!, refreshToken: UserDefaults.standard.string(forKey: PersistentConstant.refreshToken)!, tokenExpireTime: 0)
+        
     }
+    
     
     
     /**
@@ -247,7 +253,7 @@ class OAuthServer{
 
     /**
      Fetch Profile Using Open ID Connect
-     */
+     */ 
     func    getProfile(accessToken: String, handler: @escaping (Profile?) -> Void) {
         let urlComp = URLComponents(string: Credential.domain + "/userinfo")!
         

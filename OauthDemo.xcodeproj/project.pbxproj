@@ -10,6 +10,7 @@
 		530375A42667C08C00D69165 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530375A32667C08C00D69165 /* Constant.swift */; };
 		530375A82667C34500D69165 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530375A72667C34500D69165 /* Utility.swift */; };
 		530375AB2667C36B00D69165 /* AuthServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530375AA2667C36B00D69165 /* AuthServerModel.swift */; };
+		5313587E266E64EB00F6BB6A /* MultiFactorAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5313587D266E64EB00F6BB6A /* MultiFactorAuth.swift */; };
 		533E937E2664BBEA00E1670E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E937D2664BBEA00E1670E /* AppDelegate.swift */; };
 		533E93802664BBEA00E1670E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E937F2664BBEA00E1670E /* SceneDelegate.swift */; };
 		533E93822664BBEA00E1670E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E93812664BBEA00E1670E /* ViewController.swift */; };
@@ -17,6 +18,9 @@
 		533E93872664BBEB00E1670E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533E93862664BBEB00E1670E /* Assets.xcassets */; };
 		533E938A2664BBEB00E1670E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533E93882664BBEB00E1670E /* LaunchScreen.storyboard */; };
 		533E93932664C50500E1670E /* OAuthServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E93922664C50500E1670E /* OAuthServer.swift */; };
+		534D931B266F52D70057471E /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534D931A266F52D70057471E /* OTPViewController.swift */; };
+		534D931F266F74250057471E /* UserEnrollementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534D931E266F74250057471E /* UserEnrollementVC.swift */; };
+		537BCD57267365E0000F7D75 /* CredentialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537BCD56267365E0000F7D75 /* CredentialVC.swift */; };
 		53F141D626655587009BA076 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F141D526655587009BA076 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +28,7 @@
 		530375A32667C08C00D69165 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		530375A72667C34500D69165 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		530375AA2667C36B00D69165 /* AuthServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServerModel.swift; sourceTree = "<group>"; };
+		5313587D266E64EB00F6BB6A /* MultiFactorAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiFactorAuth.swift; sourceTree = "<group>"; };
 		533E937A2664BBEA00E1670E /* OauthDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OauthDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		533E937D2664BBEA00E1670E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		533E937F2664BBEA00E1670E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +39,9 @@
 		533E938B2664BBEB00E1670E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		533E93922664C50500E1670E /* OAuthServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthServer.swift; sourceTree = "<group>"; };
 		533E939C2664CF5C00E1670E /* Crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Crypto.h; sourceTree = "<group>"; };
+		534D931A266F52D70057471E /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		534D931E266F74250057471E /* UserEnrollementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEnrollementVC.swift; sourceTree = "<group>"; };
+		537BCD56267365E0000F7D75 /* CredentialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialVC.swift; sourceTree = "<group>"; };
 		53F141D526655587009BA076 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,8 +59,11 @@
 		530375AF2667D42B00D69165 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				537BCD56267365E0000F7D75 /* CredentialVC.swift */,
 				533E93812664BBEA00E1670E /* ViewController.swift */,
 				53F141D526655587009BA076 /* DetailViewController.swift */,
+				534D931A266F52D70057471E /* OTPViewController.swift */,
+				534D931E266F74250057471E /* UserEnrollementVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -78,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				533E93922664C50500E1670E /* OAuthServer.swift */,
+				5313587D266E64EB00F6BB6A /* MultiFactorAuth.swift */,
 			);
 			path = OAuthServer;
 			sourceTree = "<group>";
@@ -188,12 +200,16 @@
 			files = (
 				530375A82667C34500D69165 /* Utility.swift in Sources */,
 				533E93932664C50500E1670E /* OAuthServer.swift in Sources */,
+				534D931B266F52D70057471E /* OTPViewController.swift in Sources */,
+				5313587E266E64EB00F6BB6A /* MultiFactorAuth.swift in Sources */,
 				530375AB2667C36B00D69165 /* AuthServerModel.swift in Sources */,
 				533E93822664BBEA00E1670E /* ViewController.swift in Sources */,
 				53F141D626655587009BA076 /* DetailViewController.swift in Sources */,
 				533E937E2664BBEA00E1670E /* AppDelegate.swift in Sources */,
 				533E93802664BBEA00E1670E /* SceneDelegate.swift in Sources */,
+				537BCD57267365E0000F7D75 /* CredentialVC.swift in Sources */,
 				530375A42667C08C00D69165 /* Constant.swift in Sources */,
+				534D931F266F74250057471E /* UserEnrollementVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
