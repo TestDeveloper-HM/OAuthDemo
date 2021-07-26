@@ -13,17 +13,18 @@ Request:(To WebSession) (GET)
 https://YOUR_DOMAIN/authorize?scope=SCOPE&response_type=code&client_id=YOUR_CLIENT_ID&redirect_uri=https://YOUR_APP/callback&state=STATE&scope=emial+openid&code+verifier=RANDOM_STRING_42-128_CHAR_LONG&code_challenge_method=S256
 
 Query String Param:
-response_type = code
-client_id = xxxxxxxx
-code_challenge_method  = S256
-code_challenge = SHA256_RANDOM_STRING_42-128_CHAR_LONG
-state = anything
-scope = openid email
-redirect_uri = oauthDemo://home
+response_type = code,
+client_id = xxxxxxxx,
+code_challenge_method  = S256,
+code_challenge = SHA256_RANDOM_STRING_42-128_CHAR_LONG,
+state = anything,
+scope = openid email,
+redirect_uri = oauthDemo://home,
 
 Response(From Redirect):
-URLComponents
+URLComponents -
 oauthDemo://home&code=AUTHORIZATION_CODE&state=anything
+
 Parsing Athorization Grant to get Authorozation Code
 
 BACK CHANNEL:  (Direct Client to Server/Machine Communication)
@@ -34,7 +35,7 @@ Used to redeem access token in exchange of authorisation code.
 
 Through client to machine http request.
 
-Request:(POST)
+Request:(POST) 
 
 HTTP BODY:
 grant_type=authorization_code
