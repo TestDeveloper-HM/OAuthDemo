@@ -4,7 +4,7 @@ FRONT CHANNEL:
 
 Used to get a Authorisation Code.
 
-1. /authorize 
+1. /authorize Endpoint
 
 Through OAuth Agents(Browsers)
 
@@ -30,7 +30,7 @@ BACK CHANNEL:  (Direct Client to Server/Machine Communication)
 
 Used to redeem access token in exchange of authorisation code.
 
-2. /oauth/token (POST)
+2. /oauth/token Endpoint
 
 Through client to machine http request.
 
